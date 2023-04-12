@@ -6,10 +6,11 @@ module.exports = {
     extend: {
       colors: {
         "deep-blue": "#010026",
-        blue: "#e4e9ea",
-        red: "#383839",
-        yellow: "#e4e9ea",
-        grey: "#ededed",
+        // blue: "#e4e9ea",
+        // red: "#383839",
+        // yellow: "#e4e9ea",
+        // grey: "#ededed",
+        // skill:"rgba(55, 0, 255, 0.11)",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
       },

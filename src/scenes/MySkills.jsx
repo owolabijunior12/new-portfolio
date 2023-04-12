@@ -1,6 +1,8 @@
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
+import {SiJavascript,SiTailwindcss} from 'react-icons/si'
+import {FaReact,FaHtml5,FaCss3} from 'react-icons/fa'
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -23,10 +25,13 @@ const MySkills = () => {
             MY <span className="">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
-          </p>
+          <p className=" gap-2 my-10 flex justify-between ">
+            <a href="https://react.dev/"><FaHtml5 className="m10x- text-6xl text-red-600"/> <p>HTML</p></a>
+            <a href="https://react.dev/"><FaCss3 className="text-6xl text-blue-600"/><p>CSS</p></a>
+            <a href="https://react.dev/"><SiJavascript className="text-6xl text-yellow-300"/><p>Javasricpt</p></a>
+            <a href="https://react.dev/"><FaReact className="text-6xl text-purple-900 font-semibold"/> React.js</a>
+            <a href="https://react.dev/"><SiTailwindcss className="text-6xl text-green-400 font-semibold"/><p>Tailwind Css</p></a>
+          </p>8      
         </motion.div>
 
         <div className="mt-16 md:mt-0">
@@ -37,8 +42,8 @@ const MySkills = () => {
             >
               <img
                 alt="skills"
-                className="z-10"
-                src="assets/skills-image.png"
+                className="z-10 w-90 h-80"
+                src="assets/contact-image.png"
               />
             </div>
           ) : (
