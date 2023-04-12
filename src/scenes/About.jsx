@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section id="About" className="pt-32 pb-16">
-      {/* HEADING */}
+    <section id="About" className="flex justify-center items-center pt-16  text-4xl">     
       <motion.div
         className="md:w-1/3 text-center md:text-left"
         initial="hidden"
@@ -16,17 +15,16 @@ const About = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <p className="font-playfair font-semibold text-4xl mb-5 text-red">
+        <p className="font-playfair flex justify-center items-center font-semibold text-4xl mb-5 text-red">
          ABOUT
         </p>
         <LineGradient width="mx-auto w-2/5" />
-        <p className="mt-10">
-          you
+        <p className="mt-10 ">
+        I'm Owolabi Destiny Oluwanifemi from Lagos state, Nigeria. Im a self-taught frontend developer and a forward thinking,and an excellence-driven individual with great organisational and interpersonal skills, offering more than a year experience building and intragrating,scaling and supporting web applications 
         </p>
       </motion.div>
 
-      {/* TESTIMONIALS */}
-      <div className="md:flex md:justify-between gap-8">
+      {/* <div className="md:flex md:justify-between gap-8">
         <motion.div
           className="mx-auto relative bg-blue max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48
             before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2 before:content-person1"
@@ -59,8 +57,7 @@ const About = () => {
         >
           <p className="font-playfair text-6xl">“</p>
           <p className="text-center text-xl">
-            Aliquam aliquet integer ut fames odio in at. At magna ornare dictum
-            lectus.
+           
           </p>
         </motion.div>
 
@@ -81,7 +78,7 @@ const About = () => {
             Fames odio in at. At magna ornare dictum lectus.
           </p>
         </motion.div>
-      </div>
+      </div> */}
     </section>
   );
 };
