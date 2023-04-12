@@ -32,9 +32,8 @@ const Landing = ({ setSelectedPage }) => {
         )}
       </div>
 
-      {/* MAIN TEXT */}
       <div className="z-30 basis-2/5 mt-12 md:mt-32">
-        {/* HEADINGS */}
+    
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -56,7 +55,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-                <b>I'm a self-taught frontend developer </b>
+                <b>I'm a Self-taught Frontend Developer </b>
           </p>
         </motion.div>  
         <motion.div

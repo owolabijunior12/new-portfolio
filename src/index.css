@@ -9,10 +9,10 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color:  #383839;
+  background-color:  #000000;
   @apply text-white;
 }
-/* 
+
 body{
-  color: rgba(55, 0, 255, 0.141);
-} */
+  color: #dfb56b;
+} 

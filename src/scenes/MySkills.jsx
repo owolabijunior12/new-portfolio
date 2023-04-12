@@ -31,7 +31,7 @@ const MySkills = () => {
             <a href="https://react.dev/"><SiJavascript className="text-6xl text-yellow-300"/><p>Javasricpt</p></a>
             <a href="https://react.dev/"><FaReact className="text-6xl text-purple-900 font-semibold"/> React.js</a>
             <a href="https://react.dev/"><SiTailwindcss className="text-6xl text-green-400 font-semibold"/><p>Tailwind Css</p></a>
-          </p>8      
+          </p>  
         </motion.div>
 
         <div className="mt-16 md:mt-0">
