@@ -9,7 +9,7 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color:  #000000;
+  background-color:  #4b4b4b;
   @apply text-white;
 }
 
