@@ -76,14 +76,12 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+                I have been learning web development from more than a year building project that involves me learn how to call API and i had some knowledge of Node.js and mongodb 
+                which made me built a mern-stack music application using Mongodb,express.js,react.js and node.js.
           </p>
         </motion.div>
-
-        {/* INNOVATIVE */}
-        <motion.div
+      
+        {/* <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
           whileInView="visible"
@@ -109,9 +107,9 @@ const MySkills = () => {
             nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
             faucibus a
           </p>
-        </motion.div>
+        </motion.div> */}
         {/* IMAGINATIVE */}
-        <motion.div
+        {/* <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
           whileInView="visible"
@@ -131,13 +129,10 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+          <p className="mt-5">          
+Front-end development involves creating the graphical user interface of an app or website. The main goal is that any user should be able to view and interact seamlessly with the GUI. All visual elements on an app or website such as animations, buttons, menus, and others are built by a front-end programmer
           </p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
