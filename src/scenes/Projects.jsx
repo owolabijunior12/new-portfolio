@@ -75,7 +75,7 @@ const Projects = () => {
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
           >         
           </div>
-          <h1 className="text-9xl">coming soon</h1>
+          <h1 className="text-9xl">Coming Soon!!!</h1>
           {/* <Project title="Project 1" />
           <Project title="Project 2" />
          
