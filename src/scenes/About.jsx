@@ -44,7 +44,7 @@ const About = () => {
         
         <p className="my-10 flex">
               <img src={person} alt=""  className="mb-10 "/>
-            <p className="pt-20 ml-5">
+            <p className=" ml-5">
                <p>YABA COLLEGE OF TECHNOLOGY</p>
               <p> Computer Science</p>
               <p>2021 - 2023</p>
