@@ -1,3 +1,2 @@
-# React Portfolio App
+# Portfolio
 
-Completed React Admin Dashboard Repo
