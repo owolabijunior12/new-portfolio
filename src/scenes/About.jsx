@@ -22,8 +22,19 @@ const About = () => {
         <LineGradient width="mx-auto w-2/5" />
         
         <p className="mt-10">
-        I'm Owolabi Destiny Oluwanifemi from Lagos state, Nigeria. Im a self-taught frontend developer and a forward thinking,and an excellence-driven individual with great organisational and interpersonal skills, offering more than a year experience building and intragrating,scaling and supporting web applications.
-          
+        
+
+I'm Owolabi Destiny Oluwanifemi, a self-taught frontend developer based in Lagos, Nigeria. I have a passion for creating engaging and intuitive user experiences on the web. With a year of experience in building, integrating, scaling, and supporting web applications, I have developed a strong skill set and a keen eye for detail.
+
+As a forward-thinking individual, I constantly strive for excellence in my work. I believe in pushing the boundaries of what is possible in web development, always seeking innovative solutions to deliver outstanding results.
+
+One of my key strengths is my ability to organize and manage projects effectively. I am adept at coordinating with team members and stakeholders to ensure smooth collaboration and successful project delivery. Additionally, my interpersonal skills enable me to communicate ideas clearly and work well in a team environment.
+
+Throughout my journey as a frontend developer, I have had the opportunity to work on various projects, honing my skills and keeping up with the latest industry trends. I am proficient in leveraging modern frameworks and technologies to create responsive, scalable, and visually appealing web applications.
+
+I invite you to explore my portfolio, where you will find examples of my work showcasing my attention to detail, creativity, and dedication to delivering exceptional user experiences. I am confident that my skills and experience will be valuable in any project I undertake.
+
+
         </p>
       </motion.div>            
       <motion.div

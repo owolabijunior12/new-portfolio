@@ -3,6 +3,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import {SiJavascript,SiTailwindcss} from 'react-icons/si'
 import {FaReact,FaHtml5,FaCss3} from 'react-icons/fa'
+import skill from '../assets/skills-image.png'
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -46,7 +47,7 @@ const MySkills = () => {
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="assets/skills-image.png" />
+            <img alt="skills" className="z-10" src={skill} />
           )}
         </div>
       </div>
@@ -72,39 +73,12 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">        
-  ns, and menus. I have experience developing web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) and integrating third-party APIs in React applications.
+                   Front-end development focuses on creating the user interface of websites, ensuring seamless viewing and interaction for users. Front-end programmers build visual elements like animations, buttons, and menus. I have experience developing web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) and integrating third-party APIs in React applications.
           </p>
         </motion.div>
       
-        {/* <motion.div
-          className="md:w-1/3 mt-10"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-        >
-          <div className="relative h-32">
-            <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
-              </p>
-            </div>
-            <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
-          </div>
-          <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
-          </p>
-        </motion.div> */}
-        {/* IMAGINATIVE */}
-        {/* <motion.div
+      
+        <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
           whileInView="visible"
@@ -117,7 +91,7 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">03</p>
+              <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
                 Imaginative
               </p>
@@ -125,9 +99,9 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">          
-Front-end development involves creating the graphical user interface of an app or website. The main goal is that any user should be able to view and interact seamlessly with the GUI. All visual elements on an app or website such as animations, buttons, menus, and others are built by a front-end programmer
+              Front-end development involves creating the graphical user interface of  a website. The main goal is that any user should be able to view and interact seamlessly with the GUI. All visual elements on a website such as animations, buttons, menus, and others are built by a front-end programmer
           </p>
-        </motion.div> */}
+        </motion.div> 
       </div>
     </section>
   );

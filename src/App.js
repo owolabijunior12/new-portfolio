@@ -10,6 +10,8 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
 import About from "./scenes/About";
 import { motion } from "framer-motion";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -30,6 +32,18 @@ function App() {
 
   return (
     <div className="app bg-deep-blue">
+      <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+            />
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}

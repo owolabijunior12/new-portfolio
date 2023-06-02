@@ -1,6 +1,8 @@
 import LineGradient from "../components/LineGradient";
 import { useForm } from "react-hook-form";
+import profile from '../assets/profile-image.png';
 import { motion } from "framer-motion";
+import {  toast } from 'react-toastify';
 
 const Contact = () => {
   const {
@@ -10,11 +12,50 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = async (e) => {
-    console.log("~ e", e);
+    e.preventDefault();
+    
     const isValid = await trigger();
     if (!isValid) {
-      e.preventDefault();
+      return;
     }
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+    })
+      .then(response => {
+        if (response.ok) {
+          toast.success('Form Sumbitted Successfully', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            });
+          console.log('Form submitted successfully');
+        } else {
+          toast.error('Form not submited!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            });
+          console.error('Form submission failed');
+        }
+      })
+      .catch(error => {        
+        console.error('Error occurred during form submission', error);
+      });
   };
 
   return (
@@ -52,7 +93,7 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/profile-image.png" alt="contact" />
+          <img src={profile} alt="contact" />
         </motion.div>
 
         <motion.div
@@ -67,10 +108,9 @@ const Contact = () => {
           className="basis-1/2 mt-10 md:mt-0"
         >
           <form
-            target="_blank"
             onSubmit={onSubmit}
-            action="https://formsubmit.co/owolabijunior12@email.com"
             method="POST"
+            action="https://your-server-side-script-endpoint"
           >
             <input
               className="w-full bg-blue text-black font-semibold placeholder-opaque-black p-3"
@@ -90,7 +130,7 @@ const Contact = () => {
 
             <input
               className="w-full bg-blue text-black font-semibold placeholder-opaque-black p-3 mt-5"
-              type="text"
+              type="email"
               placeholder="EMAIL"
               {...register("email", {
                 required: true,
