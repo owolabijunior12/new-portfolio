@@ -7,8 +7,7 @@ import {FaReact,FaHtml5,FaCss3} from 'react-icons/fa'
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="pt-10 pb-24">
-      {/* HEADER AND IMAGE SECTION */}
+    <section id="skills" className="pt-10 pb-24">      
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
           className="md:w-1/3"
@@ -51,10 +50,7 @@ const MySkills = () => {
           )}
         </div>
       </div>
-
-      {/* SKILLS */}
-      <div className="md:flex md:justify-between mt-16 gap-32">
-        {/* EXPERIENCE */}
+      <div className="md:flex md:justify-between mt-16 gap-32">      
         <motion.div
           className="md:w-1/3 mt-10"
           initial="hidden"
@@ -75,9 +71,8 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
-          <p className="mt-5">
-                I have been learning web development from more than a year building project that involves me learn how to call API and i had some knowledge of Node.js and mongodb 
-                which made me built a mern-stack music application using Mongodb,express.js,react.js and node.js.
+          <p className="mt-5">        
+  ns, and menus. I have experience developing web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) and integrating third-party APIs in React applications.
           </p>
         </motion.div>
       

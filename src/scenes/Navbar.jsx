@@ -64,17 +64,17 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           </button>
         )}
 
-        {/* MOBILE MENU POPUP */}
+        
         {!isDesktop && isMenuToggled && (
           <div className="fixed right-0 text-white bottom-0 h-full bg-black w-[300px]">
-            {/* CLOSE ICON */}
+       
             <div className="flex justify-end p-12">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
                 <img alt="close-icon" src="../assets/close-icon.svg" />
               </button>
             </div>
 
-            {/* MENU ITEMS */}
+            
             <div className="flex flex-col gap-10 ml-[33%] text-2xl text-white">
               <Link
                 page="Home"

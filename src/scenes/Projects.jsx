@@ -24,9 +24,7 @@ const Project = ({ title }) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          {/* Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt. */}
+        <p className="mt-7">   
         </p>
       </div>
       <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
@@ -56,8 +54,7 @@ const Projects = () => {
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">         
-          heloo
+        <p className="mt-10 mb-10">                 
         </p>
       </motion.div>
 
@@ -76,15 +73,8 @@ const Projects = () => {
           >         
           </div>
           <h1 className="text-9xl">Coming Soon!!!</h1>
-          {/* <Project title="Project 1" />
-          <Project title="Project 2" />
-         
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
-         
-          <Project title="Project 6" />
-          <Project title="Project 7" /> */}
+          {/* {/* <Project title="Project 1" /> */}
+          
           <div
             className="flex justify-center text-center items-center p-10 bg-blue
               max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"

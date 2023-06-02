@@ -1,3 +1,6 @@
+import { FaFacebookSquare, FaGithubSquare } from "react-icons/fa";
+import { AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
+
 const SocialMediaIcons = () => {
   return (
     <div className="flex justify-center md:justify-start my-10 gap-7">
@@ -6,24 +9,24 @@ const SocialMediaIcons = () => {
         href="https://linkedin.com/in/owolabi-destiny-oluwanifemi-231222265"
         target="_blank"
         rel="noreferrer"
-      >
-        <img alt="linkedin-link" src="../assets/linkedin.png" />
+      >        
+        <AiFillLinkedin/>
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
         href="https://twitter.com/iboytech123"
         target="_blank"
         rel="noreferrer"
-      >
-        <img alt="twitter-link" src="../assets/twitter.png" />
+      >        
+        <AiOutlineTwitter/>
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
         href="https://www.facebook.com"
         target="_blank"
         rel="noreferrer"
-      >
-        <img alt="facebook-link" src="../assets/facebook.png" />
+      >        
+        <FaFacebookSquare/>
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
@@ -31,7 +34,7 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="instagram-link" src="../assets/instagram.png" />
+        <FaGithubSquare/>      
       </a>
     </div>
   );
