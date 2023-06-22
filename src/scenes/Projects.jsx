@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import { AiFillGithub, } from "react-icons/ai";
 import{BsSend } from 'react-icons/bs';
 import LineGradient from "../components/LineGradient";
@@ -19,20 +20,59 @@ const projectVariant = {
 
 const Project = ({ title }) => {
   const projectTitle = title.split(" ").join("-").toLowerCase();
-
+  const ProjectUrl = [
+    {
+      id:1,
+      github:"https://github.com/owolabijunior12/",
+      // liveUrl: ""
+    },
+    {
+      id:2,
+      github:"https://github.com/owolabijunior12/",
+      // liveUrl: ""
+    },
+    {
+      id:3,
+      github:"https://github.com/owolabijunior12/",
+      // liveUrl: ""
+    },
+    {
+      id:4,
+      github:"https://github.com/owolabijunior12/",
+      // liveUrl: ""
+    },
+    {
+      id:5,
+      github:"https://github.com/owolabijunior12/",
+      // liveUrl: ""
+    },
+    {
+      id:6,
+      github:"https://github.com/owolabijunior12/Rock-papper-scissors-game",
+      liveUrl: "https://iboytech-game-rps.vercel.app/"
+    },
+    {
+      id:7,
+      github:"https://github.com/owolabijunior12/personal-project",
+      liveUrl: "https://iboytech-e-commerce.vercel.app/"
+    },
+  ]
   return (
-    <motion.div variants={projectVariant} className="relative ">     
-      <div className="absolute h-full  opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col w-full l text-center p-16 text-deep-blue">
-        <p className="text-4xl   font-bold bg-black w-full h-full text-white flex justify-evenly  items-center">
-            <AiFillGithub/>
-            <BsSend/>
-        </p>
-        <p className="mt-7">   
-        </p>
-      </div>
+    <motion.div variants={projectVariant} className="relative ">
+      {ProjectUrl.map(({id,github,liveUrl})=>{
+        return(
+           <div key={id} className="absolute h-full  opacity-0 hover:opacity-90 transition duration-500
+            bg-grey z-30 flex flex-col w-full l text-center p-16 text-deep-blue">      
+                <p className="text-4xl   font-bold bg-black w-full h-full text-white flex justify-evenly  items-center">        
+                <a href={github} target="_blank" rel="noopener noreferrer"><AiFillGithub /></a>
+                    <a href={liveUrl} target="_blank" rel="noopener noreferrer"><BsSend/></a>
+                </p>
+                <p className="mt-7">   
+                </p>
+              </div>
+        )          
+      })}          
       <img src={`../assets/${projectTitle}.png`} alt={projectTitle} />   
-
     </motion.div>
   );
 };
@@ -79,9 +119,7 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" 
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          />         
+          <Project title="Project 1" />         
           <Project title="Project 2" />
           <Project title="Project 3" />
           <Project title="Project 4" />
